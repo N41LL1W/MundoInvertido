@@ -1,54 +1,56 @@
 /*** FONTS ***/
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik+Glitch&display=swap');
 
-/*** VARIABLES AND THEMES ***/
+/*** VARIABLES & THEMES ***/
+
 :root {
-  --primary-color: #cf0f0f;
-  --primary-color-contrast: #ffffff;
-  --field-background-color: #000;
-}
-
-.light-theme {
-  --page-background: linear-gradient(
-  180deg,
-  #ffffff 0%,
-  #ffffff 65%,
-  rgba(255, 255, 255, 0.75) 100%
-  );
-  --header-background-color: #e3e3e3;
-  --highlight-color: #000000;
-  --feature-font-family: "Archivo", sans-serf;
-  --character-top-image-src: url("https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/9a5d7b51-332e-11ef-aa78-d602bea5d5c0/strangerthings.jpg");
-  --character-top-image-color: #ffffff;
-  --character-botton-image-src: url("https://static.wixstatic.com/media/5728c7_91d032711b1d44258c90a79605ea15d6~mv2.png/v1/fill/w_980,h_490,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/5728c7_91d032711b1d44258c90a79605ea15d6~mv2.png");
-  --character-botton-image-color: #e5e5e5;
-  --background-lamp-image: url("https://ogimg.infoglobo.com.br/in/23069368-45b-45b/FT1086A/760/Castel-Byers-sala-da-familia-Byersdetalhe-da-parede-da-sala-HHN-Stranger-Things.jpg");
-  --foot-background-color: #b5bbbf;
-}
-
-.dark-theme {
-  --page-background: linear-gradient(
-  180deg,
-  #050000 0%,
-  #130404 65%,
-  rgba(19, 1, 3, 0.75) 100%
-  );
-  --header-background-color: #220f0f;
-  --highlight-color: #ffffff;
-  --feature-font-family: "Rubix Glitch", sans-serf;
-  --character-top-image-src: url("https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/9a5d7b51-332e-11ef-aa78-d602bea5d5c0/strangerthings.jpg");
-  --character-top-image-color: rgba(255, 255, 255, 0.3);
-  --character-bottom-image-src: url("https://static.wixstatic.com/media/5728c7_91d032711b1d44258c90a79605ea15d6~mv2.png/v1/fill/w_980,h_490,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/5728c7_91d032711b1d44258c90a79605ea15d6~mv2.png");
-  --character-bottom-image-color: #000;
-  --background-lamp-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aJPZXri3J46V8pVyKJxz5DNRNCo7_ah0kA&s");
-  --foot-background-color: #000;
-}
+    --primary-color: #cf0f0f;
+    --primary-color-contrast: #ffffff;
+    --field-background-color: #000;
+  }
+  
+  .light-theme {
+    --page-background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #ffffff 65%,
+      rgba(255, 255, 255, 0.75) 100%
+    );
+    --header-background-color: #e3e3e3;
+    --highlight-color: #000000;
+    --featured-font-family: "Archivo", sans-serif;
+    --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
+    --character-top-image-color: #ffffff;
+    --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
+    --character-bottom-image-color: #e5e5e5;
+    --background-lamp-image: url("../images/backgrounds/lamps.png");
+    --footer-background-color: #b5bbbf;
+  }
+  
+  .dark-theme {
+    --page-background: linear-gradient(
+      180deg,
+      #050000 0%,
+      #130404 65%,
+      rgba(19, 1, 1, 0.75) 100%
+    );
+    --header-background-color: #220f0f;
+    --highlight-color: #ffffff;
+    --featured-font-family: "Rubik Glitch", sans-serif;
+    --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
+    --character-bottom-image-color: rgba(255, 255, 255, 0.1);
+    --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
+    --character-top-image-color: #000;
+    --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+    --footer-background-color: #000;
+  }
 
 /*** GENERIC STYLES  ***/
 
 * {
   margin: 0;
   box-sizing: border-box;
+  transition: 1s;
 }
 
 h1,
